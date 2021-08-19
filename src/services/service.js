@@ -1,0 +1,1 @@
+export const baseUrl = "https://api.test-technique.smala.co/v1/984465";

@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  background: #E5E5E5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/**Navbar styling**/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.nav_logo img{
+  width: 57px;
+  float: left;
+}
+.nav_logo{
+  position: relative;
+  left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+  background: #404AC1;
+  color: #FFF;
+  padding: 8px;
+  border: none;
+  font-weight: 600;
+  border-radius: .2rem;
+}
+
+._container{
+  max-width: 1024px;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.nav_bottom_c{
+  max-width: 1024px;
+  display: flex;
+  padding: .5rem 0;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.list .list_item{
+  display: inline;
+  padding-right: 10px;
+  color: #fff;
+}
+a{
+  color: #fff;
+}
+a:-webkit-any-link:active {
+  color: #fff;
+}
+.langue{
+  background: #333fbe;
+  text-align: center;
+  padding: .2rem;
+}
+.navbar_bottom{
+  background: #404AC1;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav_bottom p{
+  color: #fff;
+}
+
+/**Users list**/
+.tabs__header{
+  display: flex;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(177, 177, 177);
+  position: relative;
+}
+
+.user_btn{
+  position: absolute;
+  right: 0;
+}
+
+.tab_title{
+  margin-right: 1rem;
+}
+
+.tab_content{
+  widows: 100% !important;
+  padding-top: 2rem;
+}
+
+.active{
+  color: #404AC1;
+}
+
+/**List admin**/
+table{
+  border-collapse: collapse;
+}
+.table{
+  position: relative;
+
+}
+.admin_list{
+  margin: 0;
+  width: 100%;
+  border: none;
+}
+
+.admin_list thead th{
+  text-align: left;
+  color: #BDBDBD;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  padding-left: 1rem;
+}
+
+.table .user_btn{
+  position: absolute;
+  right: 0;
+  margin-top: 1rem;
+}
+
+.admin_list tbody tr.card{
+  padding: 2rem 1rem;
+}
+
+
+.admin_list tbody tr{
+  border: none;
+  height: 3rem;
+  box-shadow: 1px 1px 4px #94B3C5;
+  background: rgb(255, 255, 255);
+  border-radius: .5rem;
+}
+
+
+.admin_list tbody tr td{
+  border: none;
+  padding-left: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: .5rem !important;
+
+}
+
+/**Add user style**/
+.form-header h3{
+  color: #404AC1;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+.add_user{
+  display: flex;
+}
+.block_1, .block_2{
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.form-group{
+  width: 100%;
+}
+
+.form{
+  position: relative;
+}
+
+.label{
+  color: #BDBDBD;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: .8rem;
+  margin-top: .8rem;
+}
+
+.input-form{
+  height: 2rem;
+  outline-style: none;
+  border-radius: .3rem;
+  border: 2px solid #404AC1;
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+
+select{
+  background: #fff;
+  height: 2.2rem !important;
+}
+
+@media (max-width: 768px){
+  ._container{
+    padding: 0 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .add_user{
+    display: block;
+  }
+  .block_1, .block_2{
+    width: 100%;
+    padding: 1rem 2rem;
   }
 }
